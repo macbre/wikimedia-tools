@@ -1,0 +1,10 @@
+{
+  "name": "active-users-edit-drop",
+  "version": "1.0.0",
+  "description": "",
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "nodemw": "^0.12.2"
+  }
+}
