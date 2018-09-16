@@ -9,6 +9,7 @@ const async = require('async'),
 	});
 
 // https://pl.wikipedia.org/wiki/Wikipedia:Najaktywniejsi_wikipedy%C5%9Bci/2018-01-01
+/**
 let users = [
 	'EmptyBot',
 	'Gbylski',
@@ -18,6 +19,11 @@ let users = [
 	'McBre',
 	'PMG',
 ];
+**/
+let data = require('fs').readFileSync(__dirname + '/list.txt', {'encoding': 'utf8'}); // console.log(data);
+let users = data.trim().split('\n');
+
+// console.log(users);
 
 // https://pl.wikipedia.org/w/api.php?action=help&modules=main#main/datatypes
 const time = +new Date(),
